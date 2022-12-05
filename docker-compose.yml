@@ -1,0 +1,10 @@
+version: '3'
+services:
+  backend:
+    build: .
+    ports:
+      - "90:5000"
+    volumes:
+      - "/sources/:/src"
+  redis:
+    image: redis
